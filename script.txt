@@ -1,0 +1,93 @@
+open stream "C:\TrialTrackerStatus\getResult_Stream.str"
+var EOADB_USERID
+set EOADB_USERID = '2412655'
+var EOADB_ODBCNAME
+set EOADB_ODBCNAME = 'EOADB'
+var EOADB_PASSWORD
+set EOADB_PASSWORD = '83BO9M'
+
+set '$P-DateRange' = "(STARTDATE >= '2013-05-10 00:00:00' and STARTDATE <='2013-11-27 00:00:00') and (ENDDATE >= '2013-05-10 00:00:00' and ENDDATE <='2013-11-27 00:00:00')"
+set '$P-TrialID' = "(HDDTRIAL = 'B204')"
+set '$P-TesterID'="*"
+set '$P-testcode'= "(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')"
+set '$P-PFCode' = "*"
+
+
+
+var table64
+set table64 = get node 'Function_Test':databasenode
+set ^table64.tablename ='MPS.HDD_6400_PROC'
+var table66
+set table66 = get node 'SRST_Test':databasenode
+set ^table66.tablename ='MPS.HDD_6600_PROC'
+var table68
+set table68 = get node 'Final_Test':databasenode
+set ^table68.tablename ='MPS.HDD_6800_PROC'
+var table90
+set table90 = get node'Featuring_Test':databasenode
+set ^table90.tablename ='MPS.HDD_9000_PROC'
+
+ 
+ 
+var Condition
+set Condition= get node 'Condition':selectnode
+set ^Condition.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-05-10 00:00:00' and STARTDATE <='2013-11-27 00:00:00') and (ENDDATE >= '2013-05-10 00:00:00' and ENDDATE <='2013-11-27 00:00:00')"
+
+
+var summary
+set summary= get node 'summary':tablenode
+set ^summary.full_filename='C:\TrialTrackerStatus\StreamResult\summary.csv'
+
+var detail
+set detail= get node 'detail':tablenode
+set ^detail.full_filename='C:\TrialTrackerStatus\StreamResult\detail.csv'
+
+var img_6400
+set img_6400= get node 'img_6400':plotnode
+set ^img_6400.full_filename='C:\TrialTrackerStatus\StreamResult\EC_Histogram_6400.jpg'
+var img_6600
+set img_6600= get node 'img_6600':plotnode
+set ^img_6600.full_filename='C:\TrialTrackerStatus\StreamResult\EC_Histogram_6600.jpg'
+var img_6800
+set img_6800= get node 'img_6800':plotnode
+set ^img_6800.full_filename='C:\TrialTrackerStatus\StreamResult\EC_Histogram_6800.jpg'
+var img_9000
+set img_9000= get node 'img_9000':plotnode
+set ^img_9000.full_filename='C:\TrialTrackerStatus\StreamResult\EC_Histogram_9000.jpg'
+
+var MatrixPFcode6400
+set MatrixPFcode6400= get node 'MatrixPFcode6400':matrixnode
+set ^MatrixPFcode6400.full_filename='C:\TrialTrackerStatus\StreamResult\PFProc6400.csv'
+var MatrixPFcode6600
+set MatrixPFcode6600= get node 'MatrixPFcode6600':matrixnode
+set ^MatrixPFcode6600.full_filename='C:\TrialTrackerStatus\StreamResult\PFProc6600.csv'
+var MatrixPFcode6800
+set MatrixPFcode6800= get node 'MatrixPFcode6800':matrixnode
+set ^MatrixPFcode6800.full_filename='C:\TrialTrackerStatus\StreamResult\PFProc6800.csv'
+var MatrixPFcode9000
+set MatrixPFcode9000= get node 'MatrixPFcode9000':matrixnode
+set ^MatrixPFcode9000.full_filename='C:\TrialTrackerStatus\StreamResult\PFProc9000.csv'
+save stream as "C:\TrialTrackerStatus\getResult_Stream.str"
+
+
+
+execute 'summary'
+execute 'detail'
+execute 'MatrixPFcode6400'
+execute 'MatrixPFcode6600'
+execute 'MatrixPFcode6800'
+execute 'MatrixPFcode9000'
+execute 'img_6400'
+execute 'img_6600'
+execute 'img_6800'
+execute 'img_9000'
+
+
+
+
+
+
+
+
+
+
