@@ -1,0 +1,13 @@
+TrialSubject,MPSFB0GMC Trial Confirmation
+OwnerName,Jare Sophanpanitchakul
+Email,Jare.Sophanpanitchakul@hgst.com
+Product,MPS
+TrialID,B204
+TestCode,"MPSFB0GM,MPSFB0GC"
+TesterID,*
+PFCode,*
+Include,*
+Drive input,720
+Process,6400
+StartDate,5/10/2013
+EndDate,27/11/2013
