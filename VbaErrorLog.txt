@@ -1,1 +1,14 @@
+26/10/2556 21:12:02-->Error, Module:Main.mainProcess,Line: 0, Code(1004) : 'MPSFB0GMC Trial Confirmation.csv' could not be found. Check the spelling of the file name, and verify that the file location is correct.
+26/10/2556 21:14:48-->Error, Module:Main.mainProcess,Line: 0, Code(1004) : 'MPSFB0GMC Trial Confirmation.csv' could not be found. Check the spelling of the file name, and verify that the file location is correct.
 
+If you are trying to open the file from your list of most recently used files, make sure that the file has not been renamed, moved, or deleted.
+
+26/10/2556 21:26:06-->Error, Module:Main.mainProcess,Line: 0, Code(1004) : 'MPSFB0GMC Trial Confirmation.csv' could not be found. Check the spelling of the file name, and verify that the file location is correct.
+
+If you are trying to open the file from your list of most recently used files, make sure that the file has not been renamed, moved, or deleted.
+
+26/10/2556 21:29:28-->Error, Module:Main.mainProcess,Line: 0, Code(9) : Subscript out of range
+Subject: 
+26/10/2556 21:52:04-->Error, Module:Main.mainProcess,Line: 0, Code(13) : Type mismatch
+Subject: MPSFB0GMC Trial Confirmation
+writeFile.WriteConfigFile
