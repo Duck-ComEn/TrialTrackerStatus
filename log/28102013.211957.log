@@ -1,0 +1,18 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\TrialTrackerStatus\script.txt -execute -log C:\TrialTrackerStatus\log\28102013.211957.log ] at 28 µ.¤. 2556, 21:19:59
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Warning: "tblFunc (29 fields, 0 records)" diverted to the file "tblFunc.cou" 
+Information: Stream execution complete, Elapsed=7.0 sec, CPU=0.16 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Warning: "tblSRST (29 fields, 2,326 records)" diverted to the file "tblSRST.cou" 
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.22 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Warning: "tblFin (29 fields, 1,728 records)" diverted to the file "tblFin.cou" 
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.19 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Warning: "tblFeat (29 fields, 0 records)" diverted to the file "tblFeat.cou" 
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.13 sec
