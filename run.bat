@@ -19,7 +19,7 @@ set date=%date%
 set time=%time%
 set logname= %cd%\log\%date:~7,2%%date:~4,2%%date:~10,4%.%time:~0,2%%time:~3,2%%time:~6,2%.log
 
-clemb -server -hostname %hostname% -port %port%  -username %username% -password %password%  -script %cd%\script.txt -execute -log %logname%  
+clemb -server -hostname %hostname% -port %port%  -username %username% -password %password%  -script %cd%\script.txt -execute %streamname% -log %logname%  
 @echo on
 echo Piyanan.K > finish.bin
-exit
+

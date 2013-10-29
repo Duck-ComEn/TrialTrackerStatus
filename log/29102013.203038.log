@@ -1,0 +1,4 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\TrialTrackerStatus\a.txt -execute -log C:\TrialTrackerStatus\log\29102013.203038.log ] at 29 µ.¤. 2556, 20:30:39
+Error: Expected a newline character, found 'set' on line 38 column 221
+null
