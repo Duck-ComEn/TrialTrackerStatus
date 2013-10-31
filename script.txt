@@ -35,7 +35,12 @@ set ^tableOldFunction.tablename ='CEP.HDD_6400_PROC'
 
  
 
-set ^ConditionFunc_Old:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"set ^ConditionFunc:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"set ^ConditionSRST:selectnode.condition="(HDDTRIAL = 'B5QX')(STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')" set ^ConditionFin:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')" and set ^ConditionFeat:selectnode.condition=" and (HDDTRIAL = 'B5QX') and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
+set ^ConditionFunc_Old:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^ConditionFunc:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^ConditionSRST:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^ConditionFin:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^ConditionFeat:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6600:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6800:selectnode.condition="PFCODE='0000'"
 set ^PFCODE9000:selectnode.condition="PFCODE='0000'"
@@ -83,6 +88,7 @@ set ^tblFeat:tablenode.full_filename='C:\TrialTrackerStatus\StreamResult\90check
 
 
 disconnect Append_Old_New:appendnode
+connect Old_SRST:distinctnode to Append_Old_New:appendnode
 connect _Function:distinctnode to Append_Old_New:appendnode
 connect _SRST:distinctnode to Append_Old_New:appendnode
 connect _Featuring:distinctnode to Append_Old_New:appendnode
@@ -117,8 +123,6 @@ if numrow6800 > 0 then execute img_6800
 endif
 if numrow9000 > 0 then execute img_9000
 endif
-
-
 
 
 
