@@ -6,7 +6,7 @@ set EOADB_ODBCNAME = 'EOADB'
 var EOADB_PASSWORD
 set EOADB_PASSWORD = '83BO9M'
 
-set '$P-DateRange' = "(STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set '$P-DateRange' = "(STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
 set '$P-TrialID' = "(HDDTRIAL = 'B5QX')"
 set '$P-TesterID'="*"
 set '$P-testcode'= "*"
@@ -35,11 +35,11 @@ set ^tableOldFunction.tablename ='CEP.HDD_6400_PROC'
 
  
 
-set ^ConditionFunc_Old:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
-set ^ConditionFunc:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
-set ^ConditionSRST:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
-set ^ConditionFin:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
-set ^ConditionFeat:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-10-31 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-10-31 00:00:00')"
+set ^ConditionFunc_Old:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFunc:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionSRST:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFin:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFeat:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
 set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6600:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6800:selectnode.condition="PFCODE='0000'"
@@ -96,16 +96,10 @@ connect   Append_Old_New:appendnode to DayDifference:derivenode
 connect   Append_Old_New:appendnode to 'PFSTATUS Condition':derivenode
 connect   Append_Old_New:appendnode to NumComp:aggregatenode
 
-save stream as "C:\TrialTrackerStatus\getResult_Stream.str"
 
 
 
-execute 'summary'
-execute 'detail'
-execute 'MatrixPFcode6400'
-execute 'MatrixPFcode6600'
-execute 'MatrixPFcode6800'
-execute 'MatrixPFcode9000'
+
 execute tblFunc:tablenode
 execute tblSRST:tablenode
 execute tblFin:tablenode
@@ -123,6 +117,12 @@ if numrow6800 > 0 then execute img_6800
 endif
 if numrow9000 > 0 then execute img_9000
 endif
+execute 'MatrixPFcode6400'
+execute 'MatrixPFcode6600'
+execute 'MatrixPFcode6800'
+execute 'MatrixPFcode9000'
+execute 'summary'
+execute 'detail'
 
 
 
