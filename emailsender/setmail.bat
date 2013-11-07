@@ -6,10 +6,11 @@ SET CCMail=Piyanan.Kamlangmark@hgst.com,Phanuwat.Jak@hitachigst.com
 SET SENDTOAdmin=Piyanan.Kamlangmark@hgst.com,Phanuwat.Jak@hitachigst.com
 SET SENDTO=Jare.Sophanpanitchakul@hgst.com
 SET ATTACH_RESULT=C:\TrialTrackerStatus\SummaryResult\MPSFB0GMC_Trial_Confirmation\Trialtracker.xls
-SET ATTACH_DB_SCRIPT_LOG=C:\TrialTrackerStatus\log\14102013. 82954.log
-set content= C:\TrialTrackerStatus\SummaryResult\MPSFB0GMC_Trial_Confirmation\Trialtracker_WEB.mht
+SET ATTACH_DB_SCRIPT_LOG=C:\TrialTrackerStatus\log\20131107.092710.log
+set content= C:\TrialTrackerStatus\SummaryResult\MPSFB0GMC_Trial_Confirmation\Trialtracker_web.mht
 set problem = "problem.txt"
 echo on
+
 
 
 
