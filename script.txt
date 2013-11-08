@@ -6,40 +6,40 @@ set EOADB_ODBCNAME = 'EOADB'
 var EOADB_PASSWORD
 set EOADB_PASSWORD = '83BO9M'
 
-set '$P-DateRange' = "(STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set '$P-TrialID' = "(HDDTRIAL = 'B5QX')"
+set '$P-DateRange' = "(STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set '$P-TrialID' = "(HDDTRIAL = 'B204')"
 set '$P-TesterID'="*"
-set '$P-testcode'= "*"
+set '$P-testcode'= "(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')"
 set '$P-PFCode' = "*"
 
 
 
 var table64
 set table64 = get node 'Function_Test':databasenode
-set ^table64.tablename ='CEP.HDD_6400_PROC'
+set ^table64.tablename ='MPS.HDD_6400_PROC'
 var table66
 set table66 = get node 'SRST_Test':databasenode
-set ^table66.tablename ='CEP.HDD_6600_PROC'
+set ^table66.tablename ='MPS.HDD_6600_PROC'
 var table68
 set table68 = get node 'Final_Test':databasenode
-set ^table68.tablename ='CEP.HDD_6800_PROC'
+set ^table68.tablename ='MPS.HDD_6800_PROC'
 var table90
 set table90 = get node 'Featuring_Test':databasenode
-set ^table90.tablename ='CEP.HDD_9000_PROC'
+set ^table90.tablename ='MPS.HDD_9000_PROC'
 var tableOldSRST
 set tableOldSRST = get node 'SRST_Test_Old':databasenode
-set ^tableOldSRST.tablename ='CEP.HDD_6800_PROC'
+set ^tableOldSRST.tablename ='MPS.HDD_6800_PROC'
 var tableOldFunction
 set tableOldFunction = get node 'Function_Test_Old':databasenode
-set ^tableOldFunction.tablename ='CEP.HDD_6400_PROC'
+set ^tableOldFunction.tablename ='MPS.HDD_6400_PROC'
 
  
 
-set ^ConditionFunc_Old:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFunc:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionSRST:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFin:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFeat:selectnode.condition="(HDDTRIAL = 'B5QX')  and (STARTDATE >= '2013-10-18 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-18 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFunc_Old:selectnode.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFunc:selectnode.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionSRST:selectnode.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFin:selectnode.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFeat:selectnode.condition="(TESTPGMVER = 'MPSFB0GM' or TESTPGMVER = 'MPSFB0GC')  and (HDDTRIAL = 'B204') and (STARTDATE >= '2013-10-05 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-05 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
 set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6600:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6800:selectnode.condition="PFCODE='0000'"
@@ -88,22 +88,18 @@ set ^tblFeat:tablenode.full_filename='C:\TrialTrackerStatus\StreamResult\90check
 
 
 disconnect Append_Old_New:appendnode
-connect Old_SRST:distinctnode to Append_Old_New:appendnode
 connect _Function:distinctnode to Append_Old_New:appendnode
 connect _SRST:distinctnode to Append_Old_New:appendnode
+connect _Final:distinctnode to Append_Old_New:appendnode
 connect _Featuring:distinctnode to Append_Old_New:appendnode
 connect   Append_Old_New:appendnode to DayDifference:derivenode
 connect   Append_Old_New:appendnode to 'PFSTATUS Condition':derivenode
 connect   Append_Old_New:appendnode to NumComp:aggregatenode
 
-
-
-
-
-execute tblFunc:tablenode
-execute tblSRST:tablenode
-execute tblFin:tablenode
-execute tblFeat:tablenode
+execute 'tblFunc'
+execute 'tblSRST'
+execute 'tblFin'
+execute 'tblFeat'
 set numrow6400 = tblFunc:tablenode.output.row_count
 set numrow6600 = tblSRST:tablenode.output.row_count
 set numrow6800 = tblFin:tablenode.output.row_count
@@ -123,6 +119,10 @@ execute 'MatrixPFcode6800'
 execute 'MatrixPFcode9000'
 execute 'summary'
 execute 'detail'
+
+
+
+
 
 
 

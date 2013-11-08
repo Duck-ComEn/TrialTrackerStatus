@@ -1,0 +1,4 @@
+11/08/2013 21:06:23-->Error,MPSFB0GMC Trial Confirmation: Save result Module:writefile.mainProcess,Line: 0, Code(91) : Object variable or With block variable not set
+11/08/2013 21:06:23-->End,Module:writefile.mainProcess,Code:0
+
+
