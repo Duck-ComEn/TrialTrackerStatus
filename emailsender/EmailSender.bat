@@ -19,3 +19,4 @@ blat %content% -attach %ATTACH_RESULT% -attach %ATTACH_DB_SCRIPT_LOG% -f %SENDFR
 GOTO E_CLOSE_S
 
 :E_CLOSE_S
+exit
