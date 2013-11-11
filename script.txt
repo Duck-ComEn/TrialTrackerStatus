@@ -96,14 +96,10 @@ connect   Append_Old_New:appendnode to DayDifference:derivenode
 connect   Append_Old_New:appendnode to 'PFSTATUS Condition':derivenode
 connect   Append_Old_New:appendnode to NumComp:aggregatenode
 
-
-
-
-
-execute tblFunc:tablenode
-execute tblSRST:tablenode
-execute tblFin:tablenode
-execute tblFeat:tablenode
+execute 'tblFunc'
+execute 'tblSRST'
+execute 'tblFin'
+execute 'tblFeat'
 set numrow6400 = tblFunc:tablenode.output.row_count
 set numrow6600 = tblSRST:tablenode.output.row_count
 set numrow6800 = tblFin:tablenode.output.row_count
@@ -123,6 +119,10 @@ execute 'MatrixPFcode6800'
 execute 'MatrixPFcode9000'
 execute 'summary'
 execute 'detail'
+
+
+
+
 
 
 
