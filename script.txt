@@ -6,10 +6,10 @@ set EOADB_ODBCNAME = 'EOADB'
 var EOADB_PASSWORD
 set EOADB_PASSWORD = '83BO9M'
 
-set '$P-DateRange' = "(STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set '$P-TrialID' = "(HDDTRIAL = 'B828')"
+set '$P-DateRange' = "(STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set '$P-TrialID' = "*"
 set '$P-TesterID'="*"
-set '$P-testcode'= "(TESTPGMVER = 'UR1C0KA')"
+set '$P-testcode'= "(TESTPGMVER = 'UMN1CE5')"
 set '$P-PFCode' = "*"
 
 
@@ -35,11 +35,11 @@ set ^tableOldFunction.tablename ='J1C.HDD_6400_PROC'
 
  
 
-set ^ConditionFunc_Old:selectnode.condition="(TESTPGMVER = 'UR1C0KA')  and (HDDTRIAL = 'B828') and (STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFunc:selectnode.condition="(TESTPGMVER = 'UR1C0KA')  and (HDDTRIAL = 'B828') and (STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionSRST:selectnode.condition="(TESTPGMVER = 'UR1C0KA')  and (HDDTRIAL = 'B828') and (STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFin:selectnode.condition="(TESTPGMVER = 'UR1C0KA')  and (HDDTRIAL = 'B828') and (STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
-set ^ConditionFeat:selectnode.condition="(TESTPGMVER = 'UR1C0KA')  and (HDDTRIAL = 'B828') and (STARTDATE >= '2013-11-09 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-11-09 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFunc_Old:selectnode.condition="(TESTPGMVER = 'UMN1CE5')  and (STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFunc:selectnode.condition="(TESTPGMVER = 'UMN1CE5')  and (STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionSRST:selectnode.condition="(TESTPGMVER = 'UMN1CE5')  and (STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFin:selectnode.condition="(TESTPGMVER = 'UMN1CE5')  and (STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
+set ^ConditionFeat:selectnode.condition="(TESTPGMVER = 'UMN1CE5')  and (STARTDATE >= '2013-10-23 00:00:00' and STARTDATE <='2013-11-30 00:00:00') and (ENDDATE >= '2013-10-23 00:00:00' and ENDDATE <='2013-11-30 00:00:00')"
 set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6600:selectnode.condition="PFCODE='0000'"
 set ^PFCODE6800:selectnode.condition="PFCODE='0000'"
@@ -97,33 +97,35 @@ connect   Append_Old_New:appendnode to 'PFSTATUS Condition':derivenode
 connect   Append_Old_New:appendnode to NumComp:aggregatenode
 
 execute 'tblFunc'
-execute 'tblSRST'
-execute 'tblFin'
-execute 'tblFeat'
 set numrow6400 = tblFunc:tablenode.output.row_count
+execute 'tblSRST'
 set numrow6600 = tblSRST:tablenode.output.row_count
+execute 'tblFin'
 set numrow6800 = tblFin:tablenode.output.row_count
+execute 'tblFeat'
 set numrow9000 = tblFeat:tablenode.output.row_count
 
 if numrow6400 > 0 then execute img_6400
 endif
+set ^PFCODE6400:selectnode.condition="PFCODE='0000'"
 if numrow6600 > 0 then execute img_6600
 endif
+set ^PFCODE6600:selectnode.condition="PFCODE='0000'"
 if numrow6800 > 0 then execute img_6800
 endif
+set ^PFCODE6800:selectnode.condition="PFCODE='0000'"
 if numrow9000 > 0 then execute img_9000
 endif
+set ^PFCODE9000:selectnode.condition="PFCODE='0000'"
 execute 'MatrixPFcode6400'
+set a=""
 execute 'MatrixPFcode6600'
+set b=""
 execute 'MatrixPFcode6800'
+set c=""
 execute 'MatrixPFcode9000'
+set d=""
 execute 'summary'
 execute 'detail'
-
-
-
-
-
-
 
 
