@@ -1,0 +1,2 @@
+PROCID,MTYPE,LastEndDate,FirstStartDate,NumComp,TestTime_Mean,TestTime_Min,TestTime_Max,TestTime_SDev,PFSTATUS,PFCount,%PF
+6600,J1B2,2013-11-29 20:46:10,2013-11-29 13:25:18,12,3.029,0.179,7.348,2.497,Fail,12,100.000

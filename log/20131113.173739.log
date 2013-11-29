@@ -1,0 +1,4 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131113.173739.log ] at 13 ¾.Â. 2556, 17:37:40
+Error: File not found on line 1 column 1
+Failed to run all actions, error code: 1

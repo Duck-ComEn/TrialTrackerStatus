@@ -1,0 +1,11 @@
+
+2013.11.25 06:03:04 (Mon)------------Start of Session-----------------
+Blat v2.4 w/GSS encryption (build : Jan 15 2005 08:32:11)
+Sending C:\Tomcat_5.5\webapps\te5\SummaryResult\J1C_new_truncation_time_Manual\Trialtracker_web.mht to Piyanan.kamlangmark@hgst.com, Piyanan.Kamlangmark@hgst.com, Phanuwat.Jak@hitachigst.com
+Subject: Trial Tracker status : J1C_new_truncation_time_Manual (  ).
+Login name is Piyanan.kamlangmark@hgst.com
+Attached binary file: C:\Tomcat_5.5\webapps\te5\SummaryResult\J1C_new_truncation_time_Manual\Trialtracker.xls
+Attached binary file: C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131125.060231.log
+connection::put_data() unexpected error from select: 10022
+Error: Wait a bit (possible timeout).
+2013.11.25 06:04:35 (Mon)-------------End of Session------------------

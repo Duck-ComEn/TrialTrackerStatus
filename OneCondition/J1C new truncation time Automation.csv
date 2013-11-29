@@ -1,0 +1,13 @@
+TrialSubject,J1C new truncation time Automation
+OwnerName,Piyanan kamlangmark
+Email,Piyanan.kamlangmark@hgst.com
+Product,J1C
+TrialID,B828
+TestCode,UMN1CE0A
+TesterID,*
+PFCode,*
+Include,0
+Drive input,240
+Process,6600
+StartDate,24-Oct-13
+EndDate,26-Nov-13
