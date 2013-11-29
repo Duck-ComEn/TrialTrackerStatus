@@ -1,0 +1,11 @@
+
+2013.11.25 06:07:09 (Mon)------------Start of Session-----------------
+Blat v2.4 w/GSS encryption (build : Jan 15 2005 08:32:11)
+Error: Wait a bit (possible timeout).
+SMTP server error
+Error: Connection to server was dropped.
+SMTP server error
+connection::put_data() unexpected error from send(): 10053
+Error: Error sending data.
+Error: Connection to server was dropped.
+2013.11.25 06:07:43 (Mon)-------------End of Session------------------
