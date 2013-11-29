@@ -1,0 +1,7 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131123.182453.log ] at 23 ¾.Â. 2556, 18:24:54
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=43.0 sec, CPU=28.74 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)

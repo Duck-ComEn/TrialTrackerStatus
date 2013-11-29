@@ -1,0 +1,13 @@
+TrialSubject,JGB 6110 deta Temp change to 18 degreeC
+OwnerName,piyanan kamlangmark
+Email,piyanan.kamlangmark@hgst.com;Ekkarach@hitachigst.com;Teppayut.Laokong@hgst.com
+Product,JGB
+TrialID,*
+TestCode,*
+TesterID,M312;M314;M316;M318;M31A;M31C;M31E;M31G;M31I;M31K;M31M
+PFCode,*
+Include,0
+Drive input,5000
+Process,6600
+StartDate,27-Nov-13
+EndDate,05-Dec-13

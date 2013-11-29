@@ -1,0 +1,13 @@
+TrialSubject,J1C new truncate and merge expand reporting time Automation
+OwnerName,piyanan kamlangmark
+Email,piyanan.kamlangmark@hgst.com;Ekkarach@hitachigst.com;Teppayut.Laokong@hgst.com
+Product,J1C
+TrialID,*
+TestCode,UMN1CE6
+TesterID,*
+PFCode,*
+Include,0
+Drive input,15000
+Process,6600
+StartDate,27-Nov-13
+EndDate,08-Dec-13

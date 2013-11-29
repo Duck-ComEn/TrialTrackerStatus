@@ -1,0 +1,48 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131113.173849.log ] at 13 ¾.Â. 2556, 17:38:50
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+File not found - /C:/TrialTrackerStatus/StreamResult/64checkRow.cou - C:\TrialTrackerStatus\StreamResult\64checkRow.cou (The system cannot find the path specified)
+Information: Stream execution complete, Elapsed=17.0 sec, CPU=1.38 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/66checkRow.cou - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=1.9 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/68checkRow.cou - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=1.85 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/90checkRow.cou - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=1.37 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Error: An error occured trying to create the file "C:\TrialTrackerStatus\StreamResult\EC_Histogram_6600.jpg"
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=1.2 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Error: An error occured trying to create the file "C:\TrialTrackerStatus\StreamResult\EC_Histogram_6800.jpg"
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=1.16 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/PFProc6400.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=3.0 sec, CPU=0.75 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/PFProc6600.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=0.75 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/PFProc6800.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=0.75 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Error writing file - /C:/TrialTrackerStatus/StreamResult/PFProc9000.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=0.77 sec
+Information: Stream execution started
+Error writing file - /C:/TrialTrackerStatus/StreamResult/summary.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=3.07 sec
+Information: Stream execution started
+Error writing file - /C:/TrialTrackerStatus/StreamResult/detail.csv - The system cannot find the path specified
+Information: Stream execution complete, Elapsed=7.0 sec, CPU=2.84 sec
