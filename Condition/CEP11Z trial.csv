@@ -1,0 +1,13 @@
+TrialSubject,CEP11Z trial
+OwnerName,Thanarat D.
+Email,jare.sophanpanitchakul@hgst.com;anuchit.chu@hgst.com;Thanarat.Datephala@hgst.com
+Product,CEP
+TrialID,*
+TestCode,CEP1.1ZX
+TesterID,*
+PFCode,*
+Include,0
+Drive input,480
+Process,6400
+StartDate,27-Nov-13
+EndDate,31-Dec-13

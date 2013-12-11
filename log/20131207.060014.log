@@ -1,0 +1,36 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131207.060014.log ] at 7 ¸.¤. 2556, 6:00:18
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.08 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=1.0 sec, CPU=0.06 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.07 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=1.0 sec, CPU=0.05 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=0.05 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.04 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Information: Stream execution complete, Elapsed=3.0 sec, CPU=0.04 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Information: Stream execution complete, Elapsed=1.0 sec, CPU=0.02 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.04 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.02 sec
+Information: Stream execution started
+Information: Stream execution complete, Elapsed=1.0 sec, CPU=0.14 sec
+Information: Stream execution started
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.1 sec

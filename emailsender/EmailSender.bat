@@ -14,7 +14,7 @@ rem blat %content% -attach %ATTACH_RESULT% -attach %ATTACH_DB_SCRIPT_LOG% -f %SE
 GOTO E_CLOSE_S
 :G_EXCEPTION
 REM Batch Job complete
-blat %content% -attach %ATTACH_RESULT% -attach %ATTACH_DB_SCRIPT_LOG% -f %SENDFROM% -to %SENDTO% -cc %CCMail% -server %MAILSERVERNAME% -subject "Trial Tracker status : %subject% ( %2 )."  -log %logname%
+blat %content% -attach %ATTACH_DB_SCRIPT_LOG% -f %SENDFROM% -to %SENDTO% -cc %CCMail% -server %MAILSERVERNAME% -subject "Trial Tracker status : %subject% ( %2 )."  -log %logname%
 
 GOTO E_CLOSE_S
 
