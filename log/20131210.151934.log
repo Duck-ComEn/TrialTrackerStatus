@@ -1,0 +1,30 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131210.151934.log ] at Dec 10, 2013 3:19:35 PM
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=89.0 sec, CPU=32.59 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=35.0 sec, CPU=27.58 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=58.0 sec, CPU=32.12 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=35.0 sec, CPU=27.41 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Error writing file - /C:/Tomcat_5.5/webapps/TrialTrackerStatus/StreamResult/EC_Histogram_6400.jpg - im == null!
+Information: Stream execution complete, Elapsed=77.0 sec, CPU=29.07 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Error writing file - /C:/Tomcat_5.5/webapps/TrialTrackerStatus/StreamResult/EC_Histogram_6800.jpg - im == null!
+Information: Stream execution complete, Elapsed=217.0 sec, CPU=28.45 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=59.0 sec, CPU=21.65 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=27.0 sec, CPU=21.71 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off

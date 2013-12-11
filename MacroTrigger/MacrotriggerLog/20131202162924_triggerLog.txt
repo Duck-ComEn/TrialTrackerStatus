@@ -1,0 +1,19 @@
+Start Macro Trigger
+Running ID : 20131202162924
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\Tomcat_5.5\webapps\TrialTrackerStatus\TrialTracker_V.1.1.xls at 12/3/2013 10:36:14 AM
+Status : not Completed
+Error : Automation error
+The remote procedure call failed. 
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\Tomcat_5.5\webapps\TrialTrackerStatus\TrialTracker_V.1.1.xls at 12/3/2013 10:36:14 AM
+Status : not Completed
+Error : The remote server machine does not exist or is unavailable
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\Tomcat_5.5\webapps\TrialTrackerStatus\TrialTracker_V.1.1.xls at 12/3/2013 10:36:14 AM
+Status : not Completed
+Error : The remote server machine does not exist or is unavailable
+-------------------------------------------------------------

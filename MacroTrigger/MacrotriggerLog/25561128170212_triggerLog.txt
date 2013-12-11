@@ -1,0 +1,8 @@
+Start Macro Trigger
+Running ID : 25561128170212
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\TrialResultSummarize\TemplateAndBatch\AutoSummary.xls at 28/11/2556 17:02:13
+Status : Completed sucessfully
+
+-------------------------------------------------------------
