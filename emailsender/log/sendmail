@@ -12,3 +12,10 @@ Blat saw and processed these options, and was confused by the last one...
     29112013_191353.log
 Do not understand argument: 29112013_191353.log
 2013.11.29 19:13:53 (Fri)-------------End of Session------------------
+
+2013.12.06 13:06:54 (Fri)------------Start of Session-----------------
+Blat v2.4 w/GSS encryption (build : Jan 15 2005 08:32:11)
+Blat saw and processed these options, and found fault with the last one...
+    -attach
+Not enough arguments supplied for option: -attach
+2013.12.06 13:06:54 (Fri)-------------End of Session------------------

@@ -3,7 +3,7 @@ OwnerName,phanuwat jakkaew
 Email,phanuwat.jak@hgst.com
 Product,MPS
 TrialID,C029
-TestCode,MPSSC02C;MPSSC02M
+TestCode,MPSSC02C;MPSSC02M;FET9.0NL;MPSA90PM;FET9.0RL
 TesterID,*
 PFCode,*
 Include,0

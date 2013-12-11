@@ -1,0 +1,13 @@
+Start Macro Trigger
+Running ID : 20131202084003
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\Tomcat_5.5\webapps\TrialTrackerStatus\TrialTracker_V.1.1.xls at 12/2/2013 8:45:12 AM
+Status : Completed sucessfully
+
+-------------------------------------------------------------
+
+Process Name : Trigger Macro :: C:\Tomcat_5.5\webapps\TrialTrackerStatus\TrialTracker_V.1.1.xls at 12/2/2013 8:45:12 AM
+Status : not Completed
+Error : Object required
+-------------------------------------------------------------

@@ -1,0 +1,36 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131203.081409.log ] at 3 ¸.¤. 2556, 8:14:10
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=23.0 sec, CPU=5.45 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=3.19 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=9.0 sec, CPU=3.64 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=7.0 sec, CPU=3.33 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=40.0 sec, CPU=4.0 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=11.0 sec, CPU=3.51 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=2.48 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=2.27 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=2.4 sec
+Information: Stream execution started
+W2009: Internal Error: Stream optimisation failed and is switching off
+Information: Stream execution complete, Elapsed=5.0 sec, CPU=2.53 sec
+Information: Stream execution started
+Information: Stream execution complete, Elapsed=7.0 sec, CPU=5.75 sec
+Information: Stream execution started
+Information: Stream execution complete, Elapsed=18.0 sec, CPU=6.03 sec

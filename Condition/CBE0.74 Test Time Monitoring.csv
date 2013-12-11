@@ -1,0 +1,13 @@
+TrialSubject,CBE0.74 Test Time Monitoring
+OwnerName,Jare S.
+Email,jare.sophanpanitchakul@hgst.com
+Product,CBE
+TrialID,*
+TestCode,CBE0.74T;CBE0.74X
+TesterID,*
+PFCode,*
+Include,0
+Drive input,30000
+Process,6400
+StartDate,29-Nov-13
+EndDate,31-Dec-13

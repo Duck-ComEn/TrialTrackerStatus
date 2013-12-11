@@ -1,0 +1,28 @@
+Clementine 11.1 - Copyright (c) Integral Solutions Ltd., 1994 - 2007. All rights reserved.
+Batch mode execution with flags: [-server -hostname dmsrv4.prb.hgst.com -port 28046 -username 2412655 -password *** -script C:\Tomcat_5.5\webapps\TrialTrackerStatus\script.txt -execute -log C:\Tomcat_5.5\webapps\TrialTrackerStatus\log\20131202.093833.log ] at Dec 2, 2013 9:38:34 AM
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=0.76 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=1.08 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=4.0 sec, CPU=1.04 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=3.0 sec, CPU=0.77 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=8.0 sec, CPU=0.69 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (3 rules applied)
+Information: Stream execution complete, Elapsed=6.0 sec, CPU=0.63 sec
+Information: Stream execution started
+I1023: Stream optimisation complete (4 rules applied)
+Information: Stream execution complete, Elapsed=2.0 sec, CPU=0.37 sec
+Information: Stream execution started
+Error: Server exception: java.io.EOFException
+Warning: Execution was interrupted
+Error: Script execution was interrupted on line 122 column 1
+Failed to run all actions, error code: 1
