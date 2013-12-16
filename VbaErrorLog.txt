@@ -6825,3 +6825,15 @@ If you are trying to open the file from your list of most recently used files, m
 12/11/2013 17:53:28-->End,Module:.generateCondition,Code:0
 12/11/2013 17:53:28-->End,Module:.generateDateRangeCondition,Code:0
 12/11/2013 17:53:28-->End,Module:.InnitialParam,Code:0
+12/16/2013 17:15:39-->End,Module:.generateCondition,Code:0
+12/16/2013 17:15:39-->End,Module:.generateCondition,Code:0
+12/16/2013 17:15:39-->End,Module:.generateDateRangeCondition,Code:0
+12/16/2013 17:15:39-->End,Module:.InnitialParam,Code:0
+12/16/2013 17:15:39-->Error,Start... Module:.mainProcess,Line: 10, Code(1004) : 'C:\Tomcat_5.5\webapps\TrialTrackerStatus\Condition\OneCondition\OnlythisCoditiontion.csv' could not be found. Check the spelling of the file name, and verify that the file location is correct.
+
+If you are trying to open the file from your list of most recently used files, make sure that the file has not been renamed, moved, or deleted.
+12/16/2013 17:15:39-->End,Module:.GetFileList,Code:0
+12/16/2013 17:15:39-->End,Module:.listfilename,Code:0
+12/16/2013 17:15:39-->Error,Start... Module:.WriteConfigFile,Line: 0, Code(76) : Path not found
+12/16/2013 17:15:39-->End,Module:.WriteConfigFile,Code:0
+12/16/2013 17:15:39-->End,Module:.setMailScript,Code:0
