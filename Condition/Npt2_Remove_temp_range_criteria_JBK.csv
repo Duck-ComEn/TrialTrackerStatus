@@ -1,0 +1,30 @@
+TrialSubject,Npt2 Remove temp range criteria JBK
+OwnerName,Piyanan.K
+Email,piyanan.kamlangmark@hgst.com;Ekkarach@hitachigst.com;Teppayut.Laokong@hgst.com
+Product,JBK
+TrialID,*
+TestCode,*
+TesterID,M292;M294;M296;M298;M29A;M29C;M29E;M29G;M29I;M29K;M29M
+PFCode,*
+Include,0
+Drive input,1000
+Process,6600
+StartDate,21-¡.¾.-14 11:02:00
+EndDate,28-¡.¾.-14 23:59:00
+Yield,0
+TestTime,1
+ChiSquare,0
+ModelType,*
+Sampling,*
+MFGID,*
+TestCode_FA,*
+MFGID_FA,*
+TrialID_FA,*
+StartDate_FA,
+EndDate_FA,
+TestCode_FB,*
+MFGID_FB,*
+TrialID_FB,*
+StartDate_FB,
+EndDate_FB,
+Tracker,1
